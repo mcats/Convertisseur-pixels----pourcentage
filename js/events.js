@@ -44,3 +44,23 @@ jQuery("#add").live('click', function() {
 	lewrite("partie_"+totalPartie)
 	widthLeft();
 });
+
+// Event to generate the CSS if we want that
+jQuery("#generate_it").click(function () {
+	// Optimisation! (http://jsperf.com/jquery-sharp-vs-getelementbyid)
+	var letextarea = $(document.getElementById("generated_css"));
+	// Empty the textarea
+	letextarea.val();
+	// talk for itself from here
+	var generate_array = new Array();
+	$(".apercu li").each(function (i,elem) {
+		generate_array[i] = ".col-"+i+" { width:"+ px2prct($(elem).width()) +"% }\r";
+	});
+	$.each(generate_array, function (i, value) {
+		$(letextarea).append(value);
+	});
+});
+
+
+
+
