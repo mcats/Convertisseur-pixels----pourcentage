@@ -27,7 +27,7 @@ function widthLeft () {
 // Function that allow me to put a random background-color on my li.partie
 function randomBgc () {
 	// IV my people
-	colorz = new Array ("aqua", "blue", "fuchsia", "gray", "grey", "green", "lime", "maroon", "navy", "olive", "purple", "red", "silver", "teal", "white", "yellow");
+	colorz = new Array ("#3B3B3B","#A8877E","#FFA49D","#FF7474","#FF476C","#04BFBF","#CAFCD8","#F7E967","#A9CF54","#588F27", "#191724","#4C4547","#8C594E","#D18952","#FDB157");
 	// Random number seen on http://www.javascriptkit.com/javatutors/randomnum.shtml
 	return colorz[Math.floor(Math.random()*colorz.length+1)];
 }
