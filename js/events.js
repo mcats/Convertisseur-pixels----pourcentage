@@ -13,7 +13,11 @@ jQuery("#total").change(function () {
 		lewrite("partie_0")
 		// On ajoute le bouton d'ajout d'input
 		$(".liste_parties").after('<br /><br /><input type="button" id="add" value="Ajouter un input" />');
+		// Show the #widthleft
+		$("#widthleft").show("slow");
 	}
+	// We're updating the width left
+	widthLeft();
 });
 
 // Pour chaque .partie dont la valeur change
@@ -26,6 +30,7 @@ jQuery(".partie").live('change', function () {
 	// On change dans le ul sa taille
 	lewrite(partieID);
 	$(".apercu #" + partieID).css("width",partieVAL);
+	widthLeft();
 });
 
 // Quand on clique sur le bouton "ajouter"
@@ -37,4 +42,5 @@ jQuery("#add").live('click', function() {
 	// On ajoute un <li> dans la liste de l'apercu
 	$(".apercu").append("<li style='background-color:"+randomBgc()+";width:60px' id='partie_"+totalPartie+"'></li>");
 	lewrite("partie_"+totalPartie)
+	widthLeft();
 });
