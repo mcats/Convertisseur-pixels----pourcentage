@@ -13,8 +13,8 @@ function lewrite (data) {
 
 // Function that show us how many space we have left on .apercu
 function widthLeft () {
-	var partieWidth = 0;
-	var parentWidth = $(".apercu").width();
+	var partieWidth = 0,
+		parentWidth = $(".apercu").width();
 	// for each li into .apercu
 	jQuery(".apercu li").each(function (i, elem) {
 		// Adding elem.width()'s value into var

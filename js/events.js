@@ -9,7 +9,7 @@ jQuery("#total").change(function () {
 		// On créé le premier input
 		$(".liste_parties").append("<br /><input class='partie' name='partie_0' value='60' placeholder='Largeur d\'un des child' />");
 		// On ajoute le premier <li>
-		$(".apercu").append("<li style='background-color:"+randomBgc()+"' id='partie_0'>Pouet</li>");
+		$(".apercu").append("<li style='background-color:"+randomBgc()+";width:60px' id='partie_0'>Pouet</li>");
 		lewrite("partie_0")
 		// On ajoute le bouton d'ajout d'input
 		$(".liste_parties").after('<br /><br /><input type="button" id="add" value="Ajouter un input" />');
@@ -35,6 +35,6 @@ jQuery("#add").live('click', function() {
 	// On ajoute un input à configurer
 	$(".liste_parties").append("<br /><input class='partie' name='partie_"+totalPartie+"' value='60' /><br />");
 	// On ajoute un <li> dans la liste de l'apercu
-	$(".apercu").append("<li style='background-color:"+randomBgc()+"' id='partie_"+totalPartie+"'></li>");
+	$(".apercu").append("<li style='background-color:"+randomBgc()+";width:60px' id='partie_"+totalPartie+"'></li>");
 	lewrite("partie_"+totalPartie)
 });
