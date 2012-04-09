@@ -3,9 +3,10 @@ Outil simple de convertion de colonnes en pixels présentes dans un PSD vers des
 TODO
 	- Mettre un design
 	- Ergonomiser un peu
-	- Ecrire dans l'apercu les différentes données converties
+	- Ecrire dans l'apercu les différentes données converties / done
 	- Convertir le code
 	- Translate all of this into English, like a swaggy sir.
+	- Get the generated code?
 	- Moar to come
 
 POURQUOI ?
