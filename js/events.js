@@ -14,9 +14,9 @@ jQuery("#total").change(function () {
 		$(".apercu").append("<li style='background-color:"+randomBgc()+";width:60px' id='partie_0'>Pouet</li>");
 		lewrite("partie_0")
 		// On ajoute le bouton d'ajout d'input
-		$(".liste_parties").after('<br /><br /><input type="button" id="add" value="Ajouter un input" />');
-		// Show the #widthleft
-		$("#widthleft").show("slow");
+		$("#total").after('<br /><br /><input type="button" id="add" value="Ajouter un input" />');
+		// Show the #informations
+		$("#informations").show("slow");
 	}
 	// We're updating the width left
 	widthLeft();

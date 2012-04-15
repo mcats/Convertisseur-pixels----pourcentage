@@ -5,8 +5,30 @@ h1 {
 	margin:20px 0;
 }
 
+#sidebar {
+	margin:0 50px 0 0;
+	float:left;
+	width:15%;
+	height:390px;
+	overflow:auto;	
+}
+
 #rendu {
-	margin:50px 0;
+	float:left;
+	width:80%;
+	position:relative;
+	height:390px;
+}
+
+#block-inner {
+	width:80%;
+	overflow:auto;
+}
+
+#informations {
+	position:absolute;
+	bottom:0;
+	left:0;
 }
 
 .apercu {
@@ -16,8 +38,9 @@ h1 {
 	border:1px red solid;
 }
 
-input {
+#sidebar input {
 	padding:5px 5px;
+	width:90%;
 }
 
 .apercu li {
@@ -26,6 +49,6 @@ input {
 	list-style-type:none;
 }
 
-#widthleft {
+#informations {
 	display:none;
 }

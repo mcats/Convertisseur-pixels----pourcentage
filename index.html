@@ -13,21 +13,28 @@
 			ul.apercu
 				li#partie_N
 		-->
-		<input id="total" placeholder="Largeur du parent" /><br /><br />
-		<ul class="liste_parties">
-			<!--<input class="partie" name="partie_0" value="20" placeholder="Largeur d'un des child" /><br />
-			<input class="partie" name="partie_1" value="30" placeholder="Largeur d'un des child" /><br />
-			<input class="partie" name="partie_2" value="40" placeholder="Largeur d'un des child" /><br />-->
-		</ul>
-		<div id="rendu">
-			<ul class="apercu"></ul>
-		</div>
-		<span id="widthleft">Width left:<span></span>px</span>
-		<div>
-			<input id="generate_it" type="button" value="Generate the CSS of this?" />
-			<br />
-			<textarea id="generated_css" rows="10" cols="40"></textarea>
-		</div>
+		<section id="sidebar">
+			<input id="total" placeholder="Largeur du parent" /><br /><br />
+			<ul class="liste_parties">
+				<!--<input class="partie" name="partie_0" value="20" placeholder="Largeur d'un des child" /><br />
+				<input class="partie" name="partie_1" value="30" placeholder="Largeur d'un des child" /><br />
+				<input class="partie" name="partie_2" value="40" placeholder="Largeur d'un des child" /><br />-->
+			</ul>
+		</section>
+		<section id="rendu">
+			<div id="block-inner">
+				<ul class="apercu"></ul>
+			</div>
+			<div id="informations">
+				<span id="widthleft">Width left:<span></span>px</span>
+				<div>
+					<input id="generate_it" type="button" value="Generate the CSS of this?" />
+					<br />
+					<textarea id="generated_css" rows="10" cols="40"></textarea>
+				</div>
+			</div>
+		</section>
+		
 		<script type="text/javascript" src="js/jquery1.7.1.min.js"></script>
 		<script type="text/javascript" src="js/functions.js"></script>
 		<script type="text/javascript" src="js/events.js"></script>
