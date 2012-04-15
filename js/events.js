@@ -7,7 +7,7 @@ jQuery("#total").change(function () {
 	// S'il n'y a pas de .partie
 	if ($(".partie").length == 0) {
 		// On créé le premier input
-		$(".liste_parties").append("<br /><input class='partie' name='partie_0' value='60' placeholder='Largeur d\'un des child' />");
+		$(".liste_parties").append("<li><input class='partie' name='partie_0' value='60' placeholder='Largeur d\'un des child' /></li>");
 		// Focus on the new input
 		$("[name=partie_0]").focus();
 		// On ajoute le premier <li>
@@ -40,7 +40,7 @@ jQuery("#add").live('click', function() {
 	// On récupère le nombre de .partie
 	var totalPartie = $(".partie").length;
 	// On ajoute un input à configurer
-	$(".liste_parties").append("<br /><input class='partie' name='partie_"+totalPartie+"' value='60' /><br />");
+	$(".liste_parties").append("<li><input class='partie' name='partie_"+totalPartie+"' value='60' /></li>");
 	// On ajoute un <li> dans la liste de l'apercu
 	$(".apercu").append("<li style='background-color:"+randomBgc()+";width:60px' id='partie_"+totalPartie+"'></li>");
 	lewrite("partie_"+totalPartie)

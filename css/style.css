@@ -9,7 +9,7 @@ h1 {
 	margin:50px 0;
 }
 
-ul {
+.apercu {
 	overflow:hidden;
 	width:200px;
 	height:200px;
@@ -20,7 +20,7 @@ input {
 	padding:5px 5px;
 }
 
-li {
+.apercu li {
 	float:left;
 	height:100%;
 	list-style-type:none;
