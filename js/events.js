@@ -50,7 +50,7 @@ jQuery("#generate_it").click(function () {
 	// Optimisation! (http://jsperf.com/jquery-sharp-vs-getelementbyid)
 	var letextarea = $(document.getElementById("generated_css"));
 	// Empty the textarea
-	letextarea.val();
+	letextarea.empty();
 	// talk for itself from here
 	var generate_array = new Array();
 	$(".apercu li").each(function (i,elem) {
