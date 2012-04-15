@@ -8,6 +8,8 @@ jQuery("#total").change(function () {
 	if ($(".partie").length == 0) {
 		// On créé le premier input
 		$(".liste_parties").append("<br /><input class='partie' name='partie_0' value='60' placeholder='Largeur d\'un des child' />");
+		// Focus on the new input
+		$("[name=partie_0]").focus();
 		// On ajoute le premier <li>
 		$(".apercu").append("<li style='background-color:"+randomBgc()+";width:60px' id='partie_0'>Pouet</li>");
 		lewrite("partie_0")
