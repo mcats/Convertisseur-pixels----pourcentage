@@ -19,7 +19,7 @@ jQuery("#total").change(function () {
 		$("#informations").show("slow");
 	}
 	// We're updating the width left
-	widthLeft();
+	widthLeft("write");
 });
 
 // Pour chaque .partie dont la valeur change
@@ -32,7 +32,7 @@ jQuery(".partie").live('change', function () {
 	// On change dans le ul sa taille
 	lewrite(partieID);
 	$(".apercu #" + partieID).css("width",partieVAL);
-	widthLeft();
+	widthLeft("write");
 });
 
 // Quand on clique sur le bouton "ajouter"
@@ -61,6 +61,12 @@ jQuery("#generate_it").click(function () {
 	$.each(generate_array, function (i, value) {
 		$(letextarea).append(value);
 	});
+
+	// adding a col that let know us there is some space left
+	var colLastWidth = widthLeft();
+	if (colLastWidth > 0) {
+		letextarea.append(".col-last { "+px2prct(colLastWidth)+"%; }");		
+	}
 });
 
 

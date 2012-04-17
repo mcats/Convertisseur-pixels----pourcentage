@@ -12,15 +12,20 @@ function lewrite (data) {
 }
 
 // Function that show us how many space we have left on .apercu
-function widthLeft () {
+function widthLeft (data) {
 	var partieWidth = 0;
 	// for each li into .apercu
 	jQuery(".apercu li").each(function (i, elem) {
 		// Adding elem.width()'s value into var
 		partieWidth += $(elem).width();
 	});
+	colLeft = $(".apercu").width() - partieWidth;
+	// If we want that to be written on the span, then we do a widthLeft(args)
+	if (data == "write") {
+		$("#widthleft span").html(colLeft);		
+	}
 	// returning. Not into the future.
-	$("#widthleft span").html($(".apercu").width() - partieWidth);
+	return colLeft;
 }
 
 // Function that allow me to put a random background-color on my li.partie
