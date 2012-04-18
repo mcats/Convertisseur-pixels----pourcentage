@@ -12,9 +12,10 @@ function lewrite (data) {
 }
 
 // Function that show us how many space we have left on .apercu
+// if there is no arg, that fonction just return the width disponible.
+// If there is, we want it to write into #widthleft how many px we have left.
 function widthLeft (data) {
 	var partieWidth = 0;
-	// for each li into .apercu
 	jQuery(".apercu li").each(function (i, elem) {
 		// Adding elem.width()'s value into var
 		partieWidth += $(elem).width();
